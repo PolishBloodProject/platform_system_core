@@ -169,8 +169,6 @@ LOCAL_CFLAGS := \
 	-D_XOPEN_SOURCE \
 	-D_GNU_SOURCE
 
-LOCAL_C_INCLUDES += external/openssl/include
-
 LOCAL_MODULE := adb
 
 LOCAL_STATIC_LIBRARIES := libzipfile libunz libcutils
