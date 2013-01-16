@@ -209,6 +209,10 @@ enum {
                                   AUDIO_CHANNEL_OUT_FRONT_RIGHT |
                                   AUDIO_CHANNEL_OUT_FRONT_CENTER |
                                   AUDIO_CHANNEL_OUT_BACK_CENTER),
+#ifdef QCOM_HARDWARE
+    AUDIO_CHANNEL_OUT_PENTA =    (AUDIO_CHANNEL_OUT_QUAD |
+                                  AUDIO_CHANNEL_OUT_FRONT_CENTER),
+#endif
     AUDIO_CHANNEL_OUT_5POINT1  = (AUDIO_CHANNEL_OUT_FRONT_LEFT |
                                   AUDIO_CHANNEL_OUT_FRONT_RIGHT |
                                   AUDIO_CHANNEL_OUT_FRONT_CENTER |
